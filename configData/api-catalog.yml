@@ -1,6 +1,10 @@
 server:
   port: 8084
 
+spring:
+  application:
+    name: catalog-service
+
 eureka:
   instance:
     hostname: localhost
