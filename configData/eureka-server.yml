@@ -9,5 +9,5 @@ eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
+    registerWithEureka: false
     fetchRegistry: false
