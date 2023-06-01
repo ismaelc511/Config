@@ -9,7 +9,7 @@ spring:
           enabled: true
       routes:
         - id: api-catalog
-          uri: http://localhost:8084
+          uri: lb://api-catalog
           predicates:
             - Path=/api/v1/catalog/**
 
