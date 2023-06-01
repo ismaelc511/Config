@@ -14,6 +14,15 @@ spring:
     generate-ddl: true
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Esto expone todos los endpoints de Actuator
+  endpoint:
+    health:
+      show-details: always # Muestra detalles completos en el endpoint /actuator/health
+
 eureka:
   instance:
     hostname: localhost
