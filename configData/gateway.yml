@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: api-catalog
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/v1/catalog/**
+        - id: api-movie
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/v1/movies/**
