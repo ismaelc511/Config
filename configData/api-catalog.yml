@@ -14,3 +14,12 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Esto expone todos los endpoints de Actuator
+  endpoint:
+    health:
+      show-details: always # Muestra detalles completos en el endpoint /actuator/health

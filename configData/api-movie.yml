@@ -26,6 +26,10 @@ management:
     health:
       show-details: always # Muestra detalles completos en el endpoint /actuator/health
 
+info:
+  app:
+    name: BZRP
+
 eureka:
   instance:
     hostname: localhost
