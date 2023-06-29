@@ -8,11 +8,7 @@ spring:
     base-url: http://localhost:9411
   data:
     mongodb:
-      username: usr-inscription-mongo
-      password: pwd-inscription-mongo
-      database: inscription-dev-mongo
-      port: 27017
-      host: localhost
+      uri: mongodb://usr-inscription-mongo:pwd-inscription-mongo@localhost:27017/inscription-dev-mongo
 
   rabbitmq:
     host: localhost
