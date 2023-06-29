@@ -11,7 +11,7 @@ spring:
       username: usr-inscription-mongo
       password: pwd-inscription-mongo
       database: inscription-dev-mongo
-      port: 27019
+      port: 27017
       host: localhost
 
   rabbitmq:
