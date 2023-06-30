@@ -14,5 +14,3 @@ spring:
             - Path=/api/v1/catalog/**
 
 
-
-
