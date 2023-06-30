@@ -3,24 +3,18 @@ server:
 
 spring:
   application:
-    name: api-movie
+    name: api-serie
   zipkin:
     base-url: http://localhost:9411
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3308/movie-dev
-    username: usr-movie
-    password: pwd-movie
+  data:
+    mongodb:
+      uri: mongodb://usr-inscription-mongo:pwd-inscription-mongo@localhost:27017/inscription-dev-mongo?authSource=admin
+
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
-
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
 
 management:
   endpoints:
@@ -46,4 +40,3 @@ eureka:
     fetchRegistry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
