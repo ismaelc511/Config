@@ -1,6 +1,11 @@
 server:
   port: 8080
 
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+
 spring:
   cloud:
     gateway:
@@ -12,6 +17,7 @@ spring:
           uri: lb://api-catalog
           predicates:
             - Path=/api/v1/catalog/**
+
 
 
 
