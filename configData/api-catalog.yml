@@ -56,7 +56,7 @@ resilience4j:
             - java.net.SocketTimeoutException
   circuitbreaker:
     instances:
-      catalog:
+      clientCatalog:
         allowHealthIndicatorToFail: false
         registerHealthIndicator: true
         slidingWindowType: COUNT_BASED
