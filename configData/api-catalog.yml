@@ -46,6 +46,14 @@ logging:
     com.my.package: DEBUG
 
 resilience4j:
+  retry:
+      configs:
+        default:
+          max-retry-attempts: 3
+          wait-duration: 1s
+          retry-exceptions:
+            java.io.IOException
+            java.net.SocketTimeoutException
   circuitbreaker:
     instances:
       catalog:
