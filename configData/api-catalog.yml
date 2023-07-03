@@ -49,8 +49,8 @@ resilience4j:
   retry:
      instances:
       retryCatalog:
-        maxRetryAttempts: 3  # número de intentos de reintentar antes de rendirse
-        waitDuration: 100ms  # tiempo de espera entre intentos
+        max-retry-attempts: 3  
+        wait-duration: 100ms
       configs:
         default:
           max-retry-attempts: 3
